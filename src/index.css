@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Tu animación personalizada */
+@layer utilities {
+  @keyframes scroll-experience {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-360px); }
+  }
+  .animate-\[scroll-experience_8s_linear_infinite\] {
+    animation: scroll-experience 8s linear infinite;
+  }
+}
