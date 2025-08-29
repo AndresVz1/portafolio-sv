@@ -5,7 +5,7 @@ export default function ProfileCard() {
     <div className="bg-white/90 backdrop-blur-xl border border-white/20 rounded-[28px] p-11 relative overflow-hidden shadow-xl dark:bg-slate-800 dark:text-white">
       <div className="absolute top-10 left-10 w-20 h-20 bg-white/90 rounded-full backdrop-blur-md z-10"></div>
       <div className="w-[290px] h-[240px] bg-gradient-to-tr from-slate-100 to-slate-300 rounded-3xl mb-8 relative z-20 overflow-hidden p-1">
-        <img src="./img/sergio.png" alt="Mi foto" className="w-full h-full object-cover rounded-3xl" />
+        <img src="./src/img/sergio.png" alt="Mi foto" className="w-full h-full object-cover rounded-3xl" />
       </div>
       <h1 className="text-2xl font-extrabold text-slate-900 mb-5 flex items-center gap-3 dark:text-white">
         Sergio Vasquez <span>👋</span>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 
 export default function Header({ dark, setDark }) {
   return (
@@ -8,12 +9,18 @@ export default function Header({ dark, setDark }) {
         Portafolio
       </div>
       <nav className="flex gap-10 items-center text-slate-500 dark:text-slate-300">
-        <a href="#"><i className="fas fa-home"></i> Inicio</a>
-        <a href="#"><i className="fas fa-user"></i>Sobre Mi</a>
-        <a href="#"><i className="fas fa-briefcase"></i> Servicios</a>
-        <a href="#"><i className="fas fa-folder"></i>Trabajos</a>
-        <a href="#"><i className="fas fa-blog"></i> Blog</a>
-        <a href="#"><i className="fas fa-envelope"></i> Contacto</a>
+        <Link to="/" className="flex items-center gap-2 hover:text-indigo-700">
+          <i className="fas fa-home"></i> Home
+        </Link>
+        <Link to="/about" className="flex items-center gap-2 hover:text-indigo-700">
+          <i className="fas fa-user"></i> About
+        </Link>
+        <Link to="/services" className="flex items-center gap-2 hover:text-indigo-700">
+          <i className="fas fa-briefcase"></i> Services
+        </Link>
+        <Link to="/works" className="flex items-center gap-2 hover:text-indigo-700">
+          <i className="fas fa-folder"></i> Works
+        </Link>
       </nav>
       <div className="flex items-center gap-3">
         <button
@@ -23,7 +30,7 @@ export default function Header({ dark, setDark }) {
           <i className={`fas ${dark ? "fa-sun" : "fa-moon"} text-slate-700`}></i>
         </button>
         <a href="#" className="bg-slate-900 text-white px-6 py-3 rounded-xl font-semibold text-base flex items-center gap-2 hover:bg-slate-800 transition">
-         Hablemos <i className="fas fa-chevron-down"></i>
+          Hablemos <i className="fas fa-chevron-down"></i>
         </a>
       </div>
     </header>
