@@ -1,9 +1,17 @@
 import React from 'react';
 
 const PrimarySemiRoundedButton = () => {
+  const handleWhatsAppClick = () => {
+    window.open('https://wa.me/+573015655047', '_blank');
+  };
+
   return (
-    <button className='bg-primary border-primary border rounded-md inline-flex items-center justify-center py-3 px-7 text-center text-base font-medium text-white hover:bg-[#1B44C8] hover:border-[#1B44C8] disabled:bg-gray-3 disabled:border-gray-3 disabled:text-dark-5 active:bg-[#1B44C8] active:border-[#1B44C8]'>
-      Book A Call
+    <button 
+      onClick={handleWhatsAppClick}
+      className='bg-indigo-600 border border-indigo-600 rounded-2xl flex-1 py-4 px-6 text-center text-sm font-semibold text-white hover:bg-indigo-700 transition dark:bg-gradient-to-r dark:from-indigo-500 dark:to-blue-500 dark:border-transparent dark:hover:from-indigo-600 dark:hover:to-blue-600 dark:text-white flex items-center justify-center gap-2'
+    >
+      <i className="fab fa-whatsapp text-lg"></i>
+     Chat
     </button>
   );
 };
