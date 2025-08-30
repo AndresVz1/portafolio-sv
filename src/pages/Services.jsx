@@ -4,49 +4,47 @@ const services = [
     {
         id: 1,
         title: "UI UX Design",
-        description: "Transforming ideas into user-friendly interfaces with modern design principles",
+        description: "Transformando ideas en interfaces fáciles de usar con principios de diseño modernos",
         iconClass: "far fa-object-group",
         technologies: [
-            "Figma & Adobe XD",
+            "Figma",
             "HTML, CSS & JavaScript",
-            "React & Next.js",
+            "React",
             "Tailwind CSS & Material UI"
         ]
     },
     {
         id: 2,
-        title: "Web Development",
-        description: "Building responsive and dynamic web applications",
+        title: "Desarrollador Web",
+        description: "Construyendo aplicaciones web responsivas y dinámicas",
         iconClass: "fas fa-code",
         technologies: [
             "React & Vue.js",
-            "Node.js & Express",
-            "MongoDB & PostgreSQL",
-            "AWS & Firebase"
+            "MySQL & PostgreSQL",
+            "Hostinger"
         ]
     },
     {
         id: 3,
-        title: "Custom Development",
-        description: "Tailored solutions for your specific business needs",
+        title: "Desarrollo a la medida",
+        description: "Soluciones a la medida para las necesidades específicas de su negocio",
         iconClass: "fas fa-laptop-code",
         technologies: [
-            "Python & Django",
-            "Java & Spring Boot",
+            "PHP y React",
+            "Laravel",
             "REST APIs",
-            "Microservices Architecture"
+            "MySQL & PostgreSQL"
         ]
     },
     {
         id: 4,
         title: "QA Testing",
-        description: "Ensuring quality and reliability in software delivery",
+        description: "Garantizar la calidad en la entrega de software",
         iconClass: "fas fa-bug",
         technologies: [
             "Selenium & Cypress",
-            "Jest & React Testing Library",
-            "Manual Testing",
-            "Performance Testing"
+            "Automatizacion con Python",
+            "Testing Manual",
         ]
     }
 ];
@@ -54,15 +52,17 @@ const services = [
 export default function Services() {
     return (
         <div className="grid grid-cols-1 lg:grid-cols-[380px_1fr] gap-6">
-            <ProfileCard />
+            <div className="lg:sticky lg:top-6 h-fit">
+                <ProfileCard />
+            </div>
 
             <div className="bg-white/90 backdrop-blur-xl border border-white/20 rounded-[28px] p-10 shadow-xl dark:bg-slate-800 dark:text-white">
                 <div className="mb-8">
                     <h2 className="text-3xl font-bold text-slate-900 dark:text-white">
-                        Services I <span className="text-blue-500">Offered</span>
+                        Servicios & <span className="text-blue-500">Experiencia</span>
                     </h2>
                     <p className="text-slate-600 dark:text-slate-300 mt-2">
-                        Transforming Ideas into Innovative Reality, Elevate Your Vision with Our Expert Services!
+                        Transformando Ideas en Realidad.
                     </p>
                 </div>
 
@@ -89,7 +89,7 @@ export default function Services() {
                             {/* Lista de tecnologías */}
                             <div className="ml-16">
                                 <h4 className="text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
-                                    Technologies & Tools:
+                                   Tecnologias y Herramientas:
                                 </h4>
                                 <ul className="space-y-1">
                                     {service.technologies.map((tech, index) => (

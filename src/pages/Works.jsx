@@ -1,26 +1,27 @@
 import ProfileCard from '../components/home/ProfileCard';
 import { useState } from 'react';
 
+
 const projects = [
   {
     id: 1,
-    title: "FlowSaaS - SaaS Application Tools",
-    category: "SaaS App | UI UX Design",
-    description: "I'm here to help if you're searching for a product designer to bring your idea to life or a design partner to help take your business to the next level.",
-    image: "/img/projects/flowsaas.png",
+    title: "Portafolio - Pagina Informativa",
+    category: "React App | UI UX Design",
+    description: "Página web informativa tipo portafolio, diseñada para presentar proyectos, habilidades y experiencia de forma clara y profesional. Incluye secciones de presentación personal, trabajos destacados, servicios ofrecidos y un espacio de contacto, con el objetivo de mostrar una imagen completa y organizada.",
+    image: "src/img/portafolio.png",
     logos: [
-      "Sitemark", "Vertigo", "Penta", "Network", "levelup", "luminous"
+      "React", "JavaScript", "TailwindCSS"
     ],
     link: "https://flowsaas.example.com"
   },
   {
     id: 2,
-    title: "DashFlow - Analytics Dashboard",
-    category: "Web App | Dashboard Design",
-    description: "A comprehensive analytics dashboard providing real-time insights and data visualization for business intelligence.",
-    image: "/img/projects/dashboard.png",
+    title: "Pixelee - Landing Page",
+    category: "Pagina web | Landing page",
+    description: "Landing page moderna y responsive desarrollada para mostrar servicios de manera efectiva y atractiva.",
+    image: "src/img/project1.png",
     logos: [
-      "Chart.js", "React", "Firebase", "AWS"
+      "WordPress", "Elementor", "JavaScript"
     ],
     link: "https://dashflow.example.com"
   },
@@ -67,10 +68,12 @@ export default function Works() {
       <div className="bg-white/90 backdrop-blur-xl border border-white/20 rounded-[28px] p-10 shadow-xl dark:bg-slate-800 dark:text-white">
         <div className="mb-8">
           <h2 className="text-3xl font-bold text-slate-900 dark:text-white">
-            Check Out My Latest <span className="text-blue-500">Projects</span>
+            Estos son mis ultimos <span className="text-blue-500">Proyectos</span>
           </h2>
           <p className="text-slate-600 dark:text-slate-300 mt-2">
-            I'm here to help if you're searching for a product designer to bring your idea to life or a design partner to help take your business to the next level.
+           A continuación encontrarás una selección de mis proyectos más recientes, 
+           desarrollados con dedicación y enfocados en combinar diseño, funcionalidad y buenas prácticas de programación. 
+           Cada uno refleja mi experiencia y el compromiso de ofrecer soluciones digitales de calidad.
           </p>
         </div>
 
@@ -127,7 +130,7 @@ export default function Works() {
           ))}
         </div>
 
-        {/* Paginación */}
+        {/* Paginación 
         <div className="flex justify-center gap-2 mt-8">
           {Array.from({ length: totalPages }).map((_, index) => (
             <button
@@ -142,7 +145,7 @@ export default function Works() {
               {index + 1}
             </button>
           ))}
-        </div>
+        </div>*/}
       </div>
     </div>
   );

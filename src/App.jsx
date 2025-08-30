@@ -5,7 +5,6 @@ import Services from "./pages/Services";
 import ProfileCard from "./components/home/ProfileCard";
 import ExperienceExpert from "./components/home/ExperienceExpert";
 import ProjectsCard from "./components/home/ProjectsCard";
-import ServicesSection from "./components/home/ServicesSection";
 import CTASection from "./components/home/CTASection";
 import Footer from "./components/home/Footer";
 import About from "./pages/About";
@@ -27,8 +26,7 @@ export default function App() {
                   <ExperienceExpert />
                   <ProjectsCard />
                 </div>
-                <ServicesSection />
-                <CTASection />
+                
                 <Footer />
               </>
             } />
