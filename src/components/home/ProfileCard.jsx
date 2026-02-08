@@ -6,7 +6,7 @@ export default function ProfileCard() {
       <div className="absolute top-10 left-10 w-20 h-20 bg-white/90 rounded-full backdrop-blur-md z-10"></div>
       <div className="w-[290px] h-[240px] bg-gradient-to-tr from-slate-100 to-slate-300 rounded-3xl mb-8 relative z-20 overflow-hidden p-1">
         <img 
-          src="./src/img/perfil.jpeg"
+          src="./src/img/PERFIL.jpeg"
           alt="Mi foto" 
           className="w-full h-full object-cover object-top rounded-3xl hover:scale-105 transition-transform duration-300" 
         />
